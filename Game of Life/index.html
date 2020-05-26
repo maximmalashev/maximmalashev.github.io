@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <title>Conway's Game of Life</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="title">Conway's Game of Life</div>
+            <div id="generationCounter">Generation: 0</div>
+            <div id="menu">
+                <ul>
+                    <li>
+                        <button id="rulesBtn" onclick="toggleRulesPanel()">Rules</button>
+                        <div id="rulesPnl">
+                            <table id="rulesTbl"></table>
+                        </div>
+                    </li>
+                    <li><button id="randomizeBtn">Randomize</button></li>
+                    <li><button id="clearBtn">Clear</button></li>
+                    <li><button id="startStopBtn">Start Simulation</button></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <table id="board"></table>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
